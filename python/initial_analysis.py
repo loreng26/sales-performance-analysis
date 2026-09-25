@@ -2,10 +2,15 @@ import pandas as pd
 
 df = pd.read_csv("data/sales_performance_project.csv")
 
-duplicate_rows = df[df.duplicated()]
+print("Dataset shape:", df.shape)
 
-print("Lines/Columns: ", df.shape, "\n")
-print("First Lines: ", "\n", df.head(), "\n")
-print("Columns Types:", "\n", df.dtypes, "\n")
-print("Missing Values:", "\n", df.isna().any(), "\n")
-print("Duplicated Rows:", "\n", duplicate_rows)
+print("\nFirst rows:")
+print(df.head())
+
+print("\nData types:")
+print(df.dtypes)
+
+print("\nMissing values:")
+print(df.isna().sum())
+
+print("\nDuplicated rows:", df.duplicated().sum())
