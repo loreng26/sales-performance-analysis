@@ -1,0 +1,50 @@
+Order_ID,Date,Customer,Product,Category,Quantity,Unit_Price,Channel,Region
+1001,2026-01-05,Carlos,Laptop,Electronics,1,900,Online,North
+1002,2026-01-07,Ana,Keyboard,Accessories,2,50,Store,South
+1003,2026-01-12,Pedro,Office Chair,Furniture,1,250,Online,East
+1004,2026-01-18,Maria,Monitor,Electronics,2,300,Online,West
+1005,2026-01-25,Lucas,Mouse,Accessories,3,30,Store,North
+1006,2026-02-02,Julia,Laptop,Electronics,1,950,Store,South
+1007,2026-02-08,Carlos,Desk,Furniture,1,400,Online,East
+1008,2026-02-14,Ana,Keyboard,Accessories,4,45,Online,West
+1009,2026-02-21,Pedro,Monitor,Electronics,1,280,Store,North
+1010,2026-02-27,Maria,Mouse,Accessories,5,25,Online,South
+1011,2026-03-03,Lucas,Laptop,Electronics,2,875,Online,East
+1012,2026-03-09,Julia,Office Chair,Furniture,2,220,Store,West
+1013,2026-03-15,Carlos,Monitor,Electronics,1,310,Online,North
+1014,2026-03-22,Ana,Desk,Furniture,1,380,Store,South
+1015,2026-03-29,Pedro,Mouse,Accessories,2,28,Online,East
+1016,2026-04-04,Maria,Laptop,Electronics,1,920,Store,West
+1017,2026-04-11,Lucas,Keyboard,Accessories,3,48,Online,North
+1018,2026-04-17,Julia,Office Chair,Furniture,1,240,Online,South
+1019,2026-04-23,Carlos,Monitor,Electronics,2,295,Store,East
+1020,2026-04-29,Ana,Mouse,Accessories,4,27,Online,West
+1021,2026-05-05,Pedro,Laptop,Electronics,1,980,Online,North
+1022,2026-05-10,Maria,Desk,Furniture,2,390,Store,South
+1023,2026-05-16,Lucas,Keyboard,Accessories,2,52,Online,East
+1024,2026-05-21,Julia,Monitor,Electronics,1,305,Store,West
+1025,2026-05-28,Carlos,Mouse,Accessories,6,26,Online,North
+1026,2026-06-02,Ana,Laptop,Electronics,1,910,Store,South
+1027,2026-06-08,Pedro,Office Chair,Furniture,3,215,Online,East
+1028,2026-06-14,Maria,Keyboard,Accessories,3,47,Store,West
+1029,2026-06-20,Lucas,Monitor,Electronics,2,290,Online,North
+1030,2026-06-27,Julia,Mouse,Accessories,4,29,Store,South
+1031,2026-07-03,Carlos,Laptop,Electronics,1,930,Online,East
+1032,2026-07-09,Ana,Desk,Furniture,1,410,Store,West
+1033,2026-07-15,Pedro,Keyboard,Accessories,5,46,Online,North
+1034,2026-07-21,Maria,Monitor,Electronics,1,315,Store,South
+1035,2026-07-28,Lucas,Mouse,Accessories,3,31,Online,East
+1036,2026-08-04,Julia,Laptop,Electronics,1,970,Store,West
+1037,2026-08-10,Carlos,Office Chair,Furniture,2,230,Online,North
+1038,2026-08-16,Ana,Keyboard,Accessories,2,49,Store,South
+1039,2026-08-22,Pedro,Monitor,Electronics,3,300,Online,East
+1040,2026-08-29,Maria,Mouse,Accessories,5,28,Store,West
+1041,2026-09-04,Lucas,Laptop,Electronics,1,940,Online,North
+1042,2026-09-10,Julia,Desk,Furniture,1,395,Store,South
+1043,2026-09-16,Carlos,Keyboard,Accessories,4,51,Online,East
+1044,2026-09-20,Ana,Monitor,Electronics,2,310,Store,West
+1045,2026-09-22,Pedro,Mouse,Accessories,3,27,Online,North
+1045,2026-09-22,Pedro,Mouse,Accessories,3,27,Online,North
+1046,2026-09-23,Maria,Laptop,Electronics,1,960,Store,South
+1047,2026-09-24,Lucas,Office Chair,Furniture,2,225,Online,
+1048,2026-09-24,Julia,Keyboard,Accessories,3,50,Store,West
