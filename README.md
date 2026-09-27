@@ -67,3 +67,37 @@ The main cleaning steps included:
 ### Revenue by Region
 
 ![Revenue by Region](images/revenue_by_region.png)
+
+## Technologies Used
+
+- Python
+- Pandas
+- Matplotlib
+- Git
+- GitHub
+
+## Project Structure
+
+```text
+sales_analysis_performance/
+│
+├── data/
+│   ├── sales_performance_project.csv
+│   └── sales_performance_cleaned.csv
+│
+├── images/
+│   ├── monthly_revenue.png
+│   ├── revenue_by_category.png
+│   ├── quantity_by_product.png
+│   ├── revenue_by_channel.png
+│   └── revenue_by_region.png
+│
+├── python/
+│   ├── .vscode/
+│   │   └── settings.json
+│   ├── initial_analysis.py
+│   ├── data_cleaning.py
+│   └── eda.py
+│
+├── .gitignore
+└── README.md
