@@ -187,7 +187,7 @@ print(best_month_revenue - worst_month_revenue)
 
 # Monthly Revenue Chart
 
-plt.figure()
+plt.figure(figsize=(10,6))
 
 month_names = [
     "January",
@@ -213,7 +213,8 @@ plt.ylabel("Revenue")
 
 plt.xticks(
     revenue_by_month.index,
-    month_names
+    month_names,
+    rotation=45
 )
 
 plt.grid(True)
@@ -230,13 +231,13 @@ for month, revenue in zip(
         ha="center"
     )
 
+plt.tight_layout()
 plt.savefig("images/monthly_revenue.png")
-
 plt.show()
 
 # Revenue by Category Chart
 
-plt.figure()
+plt.figure(figsize=(10, 6))
 
 plt.bar(
     revenue_by_category.index,
@@ -259,13 +260,13 @@ plt.title("Revenue by Category")
 plt.xlabel("Category")
 plt.ylabel("Revenue")
 
+plt.tight_layout()
 plt.savefig("images/revenue_by_category.png")
-
 plt.show()
 
 # Quantity by Product Chart
 
-plt.figure()
+plt.figure(figsize=(10, 6))
 
 plt.bar(
     quantity_by_product.index,
@@ -288,13 +289,15 @@ plt.title("Quantity Sold by Product")
 plt.xlabel("Product")
 plt.ylabel("Quantity")
 
-plt.savefig("images/quantity_by_product.png")
+plt.xticks(rotation=45)
 
+plt.tight_layout()
+plt.savefig("images/quantity_by_product.png")
 plt.show()
 
 # Revenue by Channel chart
 
-plt.figure()
+plt.figure(figsize=(10, 6))
 
 plt.bar(
     revenue_by_channel.index,
@@ -317,14 +320,13 @@ plt.title("Revenue by Channel")
 plt.xlabel("Channel")
 plt.ylabel("Revenue")
 
-
+plt.tight_layout()
 plt.savefig("images/revenue_by_channel.png")
-
 plt.show()
 
 # Revenue by Region Chart
 
-plt.figure()
+plt.figure(figsize=(10, 6))
 
 plt.bar(
     revenue_by_region.index,
@@ -347,6 +349,6 @@ plt.title("Revenue by Region")
 plt.xlabel("Region")
 plt.ylabel("Revenue")
 
+plt.tight_layout()
 plt.savefig("images/revenue_by_region.png")
-
 plt.show()
