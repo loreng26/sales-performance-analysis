@@ -32,10 +32,32 @@ revenue_percentage_by_category = (
     revenue_by_category / total_revenue * 100
 ).round(2)
 
+quantity_by_category = (
+    df.groupby("Category")["Quantity"]
+    .sum()
+    .sort_values(ascending=False)
+)
+
+quantity_percentage_by_category = (
+    quantity_by_category / df["Quantity"].sum() * 100
+).round(2)
+
 category_analysis = pd.DataFrame({
+    "Quantity": quantity_by_category,
+    "Quantity_Percentage": quantity_percentage_by_category,
     "Revenue": revenue_by_category,
     "Revenue_Percentage": revenue_percentage_by_category
 })
+
+category_analysis["Revenue_vs_Quantity_Ratio"] = (
+    category_analysis["Revenue_Percentage"]
+    / category_analysis["Quantity_Percentage"]
+).round(2)
+
+revenue_by_category_channel = (
+    df.groupby(["Category", "Channel"])["Revenue"]
+    .sum()
+)
 
 # Product analysis
 
@@ -59,6 +81,22 @@ revenue_percentage_by_product = (
     revenue_by_product / total_revenue * 100
 ).round(2)
 
+quantity_percentage_by_product = (
+    quantity_by_product / df["Quantity"].sum() * 100
+).round(2)
+
+product_analysis = pd.DataFrame({
+    "Quantity": quantity_by_product,
+    "Quantity_Percentage": quantity_percentage_by_product,
+    "Revenue": revenue_by_product,
+    "Revenue_Percentage": revenue_percentage_by_product,
+    "Average_Price": average_price_by_product
+})
+
+product_analysis["Revenue_vs_Quantity_Ratio"] = (
+    product_analysis["Revenue_Percentage"]
+    / product_analysis["Quantity_Percentage"]
+).round(2)
 
 # Region analysis
 
@@ -110,48 +148,32 @@ worst_month_revenue = revenue_by_month.min()
 # Output
 
 print("\n========== OVERALL ==========")
-
 print("Total Revenue:", total_revenue)
 
 
 print("\n========== CATEGORY ==========")
-
+print("\nCategory Analysis:")
 print(category_analysis)
 
+print("\nRevenue by Category and Channel:")
+print(revenue_by_category_channel)
 
 print("\n========== PRODUCT ==========")
-
-print("Revenue:")
-print(revenue_by_product)
-
-print("\nQuantity:")
-print(quantity_by_product)
-
-print("\nAverage Price:")
-print(average_price_by_product)
-
-print("\nRevenue Percentage:")
-print(revenue_percentage_by_product)
-
+print("\nProduct Analysis:")
+print(product_analysis)
 
 print("\n========== REGION ==========")
-
 print(revenue_by_region)
 
 
 print("\n========== CHANNEL ==========")
-
 print("Revenue:")
 print(revenue_by_channel)
 
 print("\nPercentage:")
 print(revenue_percentage_by_channel)
 
-
 print("\n========== MONTH ==========")
-
-print("\n")
-
 print("\nHighest Revenue Month:")
 print("Month:", best_month)
 print("Revenue:", best_month_revenue)
